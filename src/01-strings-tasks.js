@@ -205,7 +205,6 @@ function extractEmails(str) {
 function getRectangleString(width, height) {
   let substr = '';
   for (let i = 1; i <= height; i += 1) {
-    console.log(height);
     if (i === 1) substr += `┌${'─'.repeat(width - 2)}┐\n`;
     else if (i === height) substr += `└${'─'.repeat(width - 2)}┘\n`;
     else substr += `│${' '.repeat(width - 2)}│\n`;
